@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="w-screen flex flex-justify-content items-center ">
-      <div className="w-[10rem] flex flex-justify-center">
-        <img src="src/assets/Logo-4.png" alt="" />
+    <div className="w-screen flex flex justify-center bg-gray-950 p-auto ">
+      <div className="w-1/3">
+        <Link to="/">
+          <img src="src/assets/Logo-2.jpg" className="w-40 "  alt="" />
+        </Link>
       </div>
       {/* <div>
         <Link to="/">
