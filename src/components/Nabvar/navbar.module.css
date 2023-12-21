@@ -1,0 +1,13 @@
+.hNavbar {
+  background-color: #231f1e;
+  justify-content: center;
+}
+
+.botonesnav {
+  justify-content: flex-start;
+  z-index: 1000;
+}
+
+.list {
+  align-items: start;
+}
