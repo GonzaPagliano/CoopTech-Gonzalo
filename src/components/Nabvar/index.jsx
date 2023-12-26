@@ -14,7 +14,7 @@ const Navbar = () => {
     if (expand) {
       navbarRef.current.style.height = "100%";
     } else {
-      navbarRef.current.style.height = "4.5rem";
+      navbarRef.current.style.height = "4rem";
     }
   };
 
@@ -23,11 +23,11 @@ const Navbar = () => {
       <div
         id="navbar"
         ref={navbarRef}
-        style={{ height: "4.5rem" }}
-        className="fixed w-full duration-300 transition-all bg-[#231f1e] overflow-hidden top-0"
+        style={{ height: "4rem" }}
+        className="fixed w-full duration-300 transition-all overflow-hidden top-0 z-50 bg-gradient-to-b from-[#1a3137] to-[#0c3b49]"
       >
-        <div className={"w-full flex " + styles.hNavbar}>
-          <div className="w-1/2 px-auto flex">
+        <div className={"flex " + styles.hNavbar}>
+          <div className="w-1/2 flex">
             <IconButton
               size="large"
               edge="start"
@@ -42,12 +42,16 @@ const Navbar = () => {
               />
             </IconButton>
             <Link className="my-auto mr-auto" to="/login">
-              <button className="mx-5 text-white">INTRANET</button>
+              <button className="mx-5 text-white ">INTRANET</button>
             </Link>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 flex justify-center">
             <Link to="/">
-              <img src="src/assets/Logo-2.jpg" className="w-44" alt="" />
+              <img
+                src="src/assets/Logo-3-sinfondo.png"
+                className="w-48"
+                alt=""
+              />
             </Link>
           </div>
         </div>
@@ -61,49 +65,96 @@ const Navbar = () => {
 const Contenido = () => {
   return (
     <>
-      <div className="flex justify-around ">
-        <div className="flex">
-          <Link className="my-auto mr-auto" to="/services">
-            <button className="mx-5 text-white">SERVIVIOS</button>
+      <div className="flex flex-col gap-4 md:flex-row my-12 mt-20">
+        <div className=" grid basis-1/2 ">
+          <Link className="mx-auto mb-2" to="/services">
+            <button className="text-xl font-semibold text-white underline">
+              SERVICIOS
+            </button>
           </Link>
-          <ul className={" flex justif-content-center text-white" + styles.list}>
-            <li>
-              <DoneIcon /> Oficina Virtual
-            </li>
-            <li>
-              <DoneIcon /> Reconecta
-            </li>
-            <li>
-              <DoneIcon /> + Agua
-            </li>
-            <li>
-              <DoneIcon /> Cloud Services
-            </li>
-            <li>
-              <DoneIcon /> Provisión
-            </li>
-            <li>
-              <DoneIcon /> Desarrollos Especiales
-            </li>
-          </ul>
+          <div className="mx-auto mb-2">
+            <ul
+              className={" justif-content-center text-gray-500" + styles.list}
+            >
+              <li className="text-gray-500">
+                <DoneIcon /> Oficina Virtual
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Reconecta
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> + Agua
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Cloud Services
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Provisión
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Desarrollos Especiales
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="flex">
-          <Link className="my-auto mr-auto" to="/services">
-            <button className="mx-5 text-white">ADN COOPTECH</button>
+        <div className="mx-auto mb-2 grid basis-1/2">
+          <Link className="mx-auto mb-2" to="/ADNCoopTech">
+            <button className="text-xl font-semibold text-white underline">
+              ADN COOPTECH
+            </button>
           </Link>
+          <div className="mx-auto mb-2">
+            <ul className={" justif-content-center text-white" + styles.list}>
+              <li className="text-gray-500">
+                <DoneIcon /> Como Somos
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Quienes Somos
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="flex justify-around my-12 ">
-        <div className="flex">
-          <Link className="my-auto mr-auto" to="/services">
-            <button className="mx-5 text-white">CASOS DE EXITO</button>
+      <div className="flex flex-col gap-4 md:flex-row my-12 mt-20">
+        <div className=" grid basis-1/2">
+          <Link className="mx-auto mb-2" to="/">
+            <button className="text-xl font-semibold text-white underline">
+              CASOS DE EXITO
+            </button>
           </Link>
+          <div className="mx-auto mb-2">
+            <ul className={" justif-content-center text-white" + styles.list}>
+              <li className="text-gray-500">
+                <DoneIcon /> Como Somos
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Quienes Somos
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="flex">
-          <Link className="my-auto mr-auto" to="/services">
-            <button className="mx-5 text-white">CARRERA</button>
+        <div className=" grid basis-1/2">
+          <Link className="mx-auto mb-2" to="/">
+            <button className="text-xl font-semibold text-white underline">
+              CARRERA
+            </button>
           </Link>
+          <div className="mx-auto mb-2">
+            <ul className={" justif-content-center text-white" + styles.list}>
+              <li className="text-gray-500">
+                <DoneIcon /> Kind Job
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Ofertas de Empleo
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div>
+
+          <img className='w-40 mb-20' src="src/assets/Logo-1.jpg" alt="" />
+
       </div>
     </>
   );

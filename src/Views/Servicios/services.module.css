@@ -1,3 +1,8 @@
-.card{
-    box-shadow: black 8px 7px 27.5px;
+.video {
+  opacity: 90%;
+}
+
+.boton {
+  padding: 5px;
+  border-radius: 15px;
 }

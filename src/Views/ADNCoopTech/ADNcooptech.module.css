@@ -1,0 +1,12 @@
+.text {
+  font-family: Montserrat;
+  font-weight: lighter;
+}
+
+.textcard {
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

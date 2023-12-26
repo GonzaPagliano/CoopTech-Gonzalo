@@ -1,13 +1,17 @@
 .hNavbar {
-  background-color: #231f1e;
+  background-color: #1a3138;
   justify-content: center;
+}
+.navbarexpand {
+  background: linear-gradient(180deg, rgba(26,49,56,1) 0%, rgba(8,101,129,1) 77%);
 }
 
 .botonesnav {
   justify-content: flex-start;
-  z-index: 1000;
 }
 
 .list {
   align-items: start;
+  flex-direction: column;
+  text-align: left;
 }
