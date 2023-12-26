@@ -2,10 +2,11 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="w-screen w-full flex flex-items-center">
-      <img className="w-80%"src="src/assets/Prueba.jpg" />
-    </div>
-  );
+    <>
+      <img src="src/assets/Prueba-4.jpg" alt="" />
+    </>
+    
+  )
 };
 
 export default Home;

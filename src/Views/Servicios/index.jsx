@@ -16,7 +16,7 @@ const MediaCard = () => {
       <Card sx={{ maxWidth: 345, background: "#278e9b", boxShadow: "black 8px 7px 27.5px" }}>
         <CardMedia
           sx={{ height: 150, border: "black" }}
-          image="src/assets/Coop Tech inicial_page-0001.jpg"
+          image="src/assets/Logo-CoopTech.jpg"
           title="Oficina Virtual"
         />
         <CardContent className="text-white">
@@ -36,7 +36,7 @@ const MediaCard = () => {
       <Card sx={{ maxWidth: 345, background: "#278e9b", boxShadow: "black 8px 7px 27.5px" }}>
         <CardMedia
           sx={{ height: 150 }}
-          image="src/assets/Coop Tech inicial_page-0001.jpg"
+          image="src/assets/Logo-CoopTech.jpg"
           title="Reconecta"
         />
         <CardContent className="text-white">
@@ -56,7 +56,7 @@ const MediaCard = () => {
       <Card sx={{ maxWidth: 345, background: "#278e9b", boxShadow: "black 8px 7px 27.5px" }}>
         <CardMedia
           sx={{ height: 150 }}
-          image="src/assets/Coop Tech inicial_page-0001.jpg"
+          image="src/assets/Logo-CoopTech.jpg"
           title="+ Agua"
         />
         <CardContent className="text-white">
@@ -84,7 +84,7 @@ const MediaCard = () => {
       <Card sx={{ maxWidth: 345, background: "#278e9b", boxShadow: "black 8px 7px 27.5px" }}>
         <CardMedia
           sx={{ height: 150, border: "black" }}
-          image="src/assets/Coop Tech inicial_page-0001.jpg"
+          image="src/assets/Logo-CoopTech.jpg"
           title="Oficina Virtual"
         />
         <CardContent className="text-white">
@@ -104,7 +104,7 @@ const MediaCard = () => {
       <Card sx={{ maxWidth: 345, background: "#278e9b", boxShadow: "black 8px 7px 27.5px" }}>
         <CardMedia
           sx={{ height: 150 }}
-          image="src/assets/Coop Tech inicial_page-0001.jpg"
+          image="src/assets/Logo-CoopTech.jpg"
           title="Reconecta"
         />
         <CardContent className="text-white">
@@ -124,7 +124,7 @@ const MediaCard = () => {
       <Card sx={{ maxWidth: 345, background: "#278e9b", boxShadow: "black 8px 7px 27.5px" }}>
         <CardMedia
           sx={{ height: 150 }}
-          image="src/assets/Coop Tech inicial_page-0001.jpg"
+          image="src/assets/Logo-CoopTech.jpg"
           title="+ Agua"
         />
         <CardContent className="text-white">
