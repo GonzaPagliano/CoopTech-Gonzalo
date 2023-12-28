@@ -125,10 +125,16 @@ const Contenido = () => {
           <div className="mx-auto mb-2">
             <ul className={" justif-content-center text-white" + styles.list}>
               <li className="text-gray-500">
-                <DoneIcon /> Como Somos
+                <DoneIcon /> Caso 1
               </li>
               <li className="text-gray-500">
-                <DoneIcon /> Quienes Somos
+                <DoneIcon /> Caso 2
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Caso 3
+              </li>
+              <li className="text-gray-500">
+                <DoneIcon /> Caso 4
               </li>
             </ul>
           </div>

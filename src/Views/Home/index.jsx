@@ -21,7 +21,7 @@ const Home = () => {
             position: "absolute",
             top: "30%",
             left: "30%",
-            width: "40",
+            width: "60vw",
             transform: "translate(-50%, -50%)",
             zIndex: "1",
           }}
@@ -34,9 +34,9 @@ const Home = () => {
             left: "20%",
             transform: "translate(-50%, -50%)",
             zIndex: "1",
-            fontSize: "30px"
+            fontSize: "20px"
           }}
-          className="w-1/4 z-50 text-black"
+          className="w-1/4 z-50 text-white"
         >
           SOMOS LO QUE ESTAS BUSCANDO
         </h1>

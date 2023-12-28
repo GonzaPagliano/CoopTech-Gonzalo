@@ -12,7 +12,7 @@ const ADNCoopTech = () => {
         {/* SECCION QUIENES SOMOS */}
         <div className="col-md-6 px-8">
           <h1 className={"text-[50px] " + styles.text}>QUIENES SOMOS</h1>
-          <img src="src/assets/Logo-3.jpg" alt="" />
+          <img className="mb-8" src="src/assets/Logo-3.jpg" alt="" />
         </div>
 
         {/* SECCION COMO SOMOS */}
@@ -40,7 +40,7 @@ const ADNCoopTech = () => {
         {/* SECCION QUIENES SOMOS */}
         <div className="col-md-6 px-8">
           <h1 className={"text-[50px] " + styles.text}>COMO SOMOS</h1>
-          <img src="src/assets/Logo-3.jpg" alt="" />
+          <img className="mb-8" src="src/assets/Logo-3.jpg" alt="" />
         </div>
       </div>
     </>
