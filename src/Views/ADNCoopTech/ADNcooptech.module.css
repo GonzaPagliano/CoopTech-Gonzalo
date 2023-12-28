@@ -4,11 +4,13 @@
 }
 
 .textcard {
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Montserrat;
+  font-weight: lighter;
+
 }
 
 .cardimg{

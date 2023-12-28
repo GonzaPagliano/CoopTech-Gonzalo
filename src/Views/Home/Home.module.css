@@ -1,4 +1,11 @@
 .video{
-opacity: 80%;
+opacity: 90%;
 
+}
+
+.texto{
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
 }

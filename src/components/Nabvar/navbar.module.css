@@ -15,3 +15,7 @@
   flex-direction: column;
   text-align: left;
 }
+
+.submenu{
+  font-size: 16px;
+}

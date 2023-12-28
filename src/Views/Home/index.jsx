@@ -13,7 +13,7 @@ const Home = () => {
           autoplay="true"
           playsinline={true}
         >
-          <source src="src/assets/Principal-1.mp4" />
+          <source src="src/assets/Principal-4.mp4" />
         </video>
         <img
           src="src/assets/Logo-CoopTech5.png"
@@ -31,14 +31,14 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "45%",
-            left: "20%",
+            left: "35%",
             transform: "translate(-50%, -50%)",
             zIndex: "1",
-            fontSize: "20px"
+            
           }}
-          className="w-1/4 z-50 text-white"
+          className={"w-1/2 z-50 " + styles.texto}
         >
-          SOMOS LO QUE ESTAS BUSCANDO
+          Para evolucionar los servicios esenciales, con adaptabilidad y escalabilidad
         </h1>
       </div>
 
