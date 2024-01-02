@@ -11,6 +11,20 @@ import ElectricalServicesIcon from "@mui/icons-material/ElectricalServices";
 import StormIcon from "@mui/icons-material/Storm";
 import CloudCircleIcon from "@mui/icons-material/CloudCircle";
 import WebhookIcon from "@mui/icons-material/Webhook";
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 900,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
 
 const MediaCard = () => {
   const botonabajo = () => {
@@ -22,6 +36,10 @@ const MediaCard = () => {
       inline: "nearest", // Ajusta la posición lateral para que sea la más cercana
     });
   };
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -57,7 +75,11 @@ const MediaCard = () => {
           }}
           className="w-3/4 z-50 text-neutral-800"
         >
-          <div className={"bg-zinc-200 opacity-50 p-4 rounded-[12px]" + styles.resumen}>
+          <div
+            className={
+              "bg-zinc-200 opacity-50 p-4 rounded-[12px] " + styles.resumen
+            }
+          >
             {" "}
             Creamos soluciones completas, Para que tus redes eléctricas, de agua
             potable, telecomunicaciones y otros servicios funcionen mejor, de
@@ -71,7 +93,10 @@ const MediaCard = () => {
           <div className="mt-4">
             <button
               onClick={botonabajo}
-              className={"border-2 border-gray-900 bg-zinc-200 hover:bg-zinc-400 " + styles.boton}
+              className={
+                "border-2 border-gray-900 bg-zinc-200 hover:bg-zinc-400 " +
+                styles.boton
+              }
             >
               ver más
             </button>
@@ -82,14 +107,7 @@ const MediaCard = () => {
       {/* --------- */}
       <section id="miElemento">
         <div className="flex justify-evenly my-24 text-center">
-          <Card
-            sx={{
-              maxWidth: 345,
-              background: "#278e9b",
-              boxShadow: "black 8px 7px 27.5px",
-              borderRadius: "8px",
-            }}
-          >
+          <Card className={"max-w-[345px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150, border: "black" }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -104,10 +122,10 @@ const MediaCard = () => {
                 nueva de administrar tus servicios...
               </Typography>
             </CardContent>
-            <CardActions>
+            <CardActions className="flex justify-center">
               <Button
+                onClick={handleOpen}
                 className={"text-white " + styles.botoncard}
-                href="https://app.coopmorteros.coop/"
                 variant="contained"
                 disableElevation
               >
@@ -115,15 +133,34 @@ const MediaCard = () => {
               </Button>
             </CardActions>
           </Card>
-          {/* ------ */}
-          <Card
-            sx={{
-              maxWidth: 345,
-              background: "#278e9b",
-              boxShadow: "black 8px 7px 27.5px",
-              borderRadius: "8px",
-            }}
+
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
           >
+            <Box sx={style}>
+              <video
+                className={"w-full flex " + styles.video}
+                loop={true}
+                muted={true}
+                autoplay="true"
+                playsinline={true}
+              >
+                <source src="src/assets/Principal-4.mp4" />
+              </video>
+              <Typography id="modal-modal-title" variant="h6" component="h2">
+                Text in a modal
+              </Typography>
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              </Typography>
+            </Box>
+          </Modal>
+
+          {/* ------ */}
+          <Card className={"max-w-[345px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150 }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -138,21 +175,19 @@ const MediaCard = () => {
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
             </CardContent>
-            <CardActions>
-              <a className="text-white" href="https://app.coopmorteros.coop/">
+            <CardActions className="flex justify-center">
+              <Button
+                className={"text-white " + styles.botoncard}
+                href=""
+                variant="contained"
+                disableElevation
+              >
                 Ver Más
-              </a>
+              </Button>
             </CardActions>
           </Card>
           {/* ------ */}
-          <Card
-            sx={{
-              maxWidth: 345,
-              background: "#278e9b",
-              boxShadow: "black 8px 7px 27.5px",
-              borderRadius: "8px",
-            }}
-          >
+          <Card className={"max-w-[345px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150 }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -172,24 +207,22 @@ const MediaCard = () => {
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
             </CardContent>
-            <CardActions>
-              <a className="text-white" href="https://app.coopmorteros.coop/">
+            <CardActions className="flex justify-center">
+              <Button
+                className={"text-white " + styles.botoncard}
+                href=""
+                variant="contained"
+                disableElevation
+              >
                 Ver Más
-              </a>
+              </Button>
             </CardActions>
           </Card>
         </div>
 
         {/* ----- */}
         <div className="flex justify-evenly my-24 text-center">
-          <Card
-            sx={{
-              maxWidth: 345,
-              background: "#278e9b",
-              boxShadow: "black 8px 7px 27.5px",
-              borderRadius: "8px",
-            }}
-          >
+          <Card className={"max-w-[345px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150, border: "black" }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -204,21 +237,19 @@ const MediaCard = () => {
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
             </CardContent>
-            <CardActions>
-              <a className="text-white" href="https://app.coopmorteros.coop/">
+            <CardActions className="flex justify-center">
+              <Button
+                className={"text-white " + styles.botoncard}
+                href=""
+                variant="contained"
+                disableElevation
+              >
                 Ver Más
-              </a>
+              </Button>
             </CardActions>
           </Card>
           {/* ------ */}
-          <Card
-            sx={{
-              maxWidth: 345,
-              background: "#278e9b",
-              boxShadow: "black 8px 7px 27.5px",
-              borderRadius: "8px",
-            }}
-          >
+          <Card className={"max-w-[345px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150 }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -233,21 +264,19 @@ const MediaCard = () => {
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
             </CardContent>
-            <CardActions>
-              <a className="text-white" href="https://app.coopmorteros.coop/">
+            <CardActions className="flex justify-center">
+              <Button
+                className={"text-white " + styles.botoncard}
+                href=""
+                variant="contained"
+                disableElevation
+              >
                 Ver Más
-              </a>
+              </Button>
             </CardActions>
           </Card>
           {/* ------ */}
-          <Card
-            sx={{
-              maxWidth: 345,
-              background: "#278e9b",
-              boxShadow: "black 8px 7px 27.5px",
-              borderRadius: "8px",
-            }}
-          >
+          <Card className={"max-w-[345px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150 }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -267,10 +296,15 @@ const MediaCard = () => {
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
             </CardContent>
-            <CardActions>
-              <a className="text-white" href="https://app.coopmorteros.coop/">
+            <CardActions className="flex justify-center">
+              <Button
+                className={"text-white " + styles.botoncard}
+                href="https://app.coopmorteros.coop/"
+                variant="contained"
+                disableElevation
+              >
                 Ver Más
-              </a>
+              </Button>
             </CardActions>
           </Card>
         </div>

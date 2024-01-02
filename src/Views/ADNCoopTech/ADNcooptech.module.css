@@ -10,9 +10,17 @@
   align-items: center;
   font-family: Montserrat;
   font-weight: lighter;
-
 }
 
-.cardimg{
+.cardimg {
   margin-bottom: 5rem;
+}
+
+.imgprincipal {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 20px;
 }

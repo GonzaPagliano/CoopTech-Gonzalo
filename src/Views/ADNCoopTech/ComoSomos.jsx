@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ADNcooptech.module.css";
 
-const ADNCoopTech = () => {
+const Comosomos = () => {
   return (
     <>
       <div style={{ position: "relative" }}>
@@ -37,69 +37,76 @@ const ADNCoopTech = () => {
           <br />
         </h1>
       </div>
-
-      <div className="flex flex-row justify-content-center p-24">
-        {/* SECCION QUIENES SOMOS */}
-        <div className="col-md-6 p-8">
-          <img
-            className="w-screen mb-8 rounded-[10px]"
-            src="src/assets/ADN-comosomos2.jpg"
-            alt=""
-          />
+      <div class="grid justify-items-center m-[5rem]">
+        <div className="flex flex-row justify-content-center mx-24">
+          <div className={"col-md-6 p-8 " + styles.textcard}>
+            <div className="flex px-8">
+              Nuestro compromiso va más allá de la tecnología: buscamos generar
+              bienestar en las personas, mediante servicios de calidad y
+              accesibles, a través de la tecnología y la innovación.  
+            </div>
+          </div>
+          <div className="col-md-6 p-8">
+            <img
+              className="w-full mb-8 rounded-[10px]"
+              src="src/assets/ADN-mision.jpg"
+              alt=""
+            />
+          </div>
         </div>
-
-        {/* SECCION COMO SOMOS */}
-        <div className={"col-md-6 p-8 " + styles.textcard}>
-          <div className="flex px-8">
-            "Trabajamos con personas alineadas con nuestra visión, empleando la
-            cercanía como vehículo de nuestros valores, porque sólo estando
-            cerca es posible identificar los matices que hacen único el talento
-            de las personas y grandes a los proyectos de nuestros"
+        <div className="flex flex-row justify-content-center mx-24">
+          <div className="col-md-6 p-8">
+            <img
+              className="w-full mb-8 rounded-[10px]"
+              src="src/assets/ADN-vision.jpg"
+              alt=""
+            />
+          </div>
+          <div className={"col-md-6 p-8 " + styles.textcard}>
+            <div className="flex px-8">
+              <ul>
+                <li>
+                  • Responsabilidad Social: Comprometidos con el impacto
+                  positivo en las personas y el entorno en el que operamos.
+                </li>
+                <li>
+                  • Cercanía y Calidez:Valoramos la atención personalizada y el
+                  trato humano en todas nuestras interacciones.
+                </li>
+                <li>
+                  • Honestidad del Equipo de Trabajo: La transparencia y la
+                  integridad son la base de nuestras relaciones profesionales.
+                </li>
+                <li>
+                  • Innovación e Iniciativa: Buscamos constantemente nuevas
+                  formas de mejorar y crecer, promoviendo la creatividad y la
+                  iniciativa en nuestro equipo.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-content-center mx-24">
+          <div className={"col-md-6 p-8 " + styles.textcard}>
+            <div className="flex px-8">
+              Impulsamos la transformación digital en el ámbito de los servicios
+              esenciales, y ofrecemos soluciones adaptadas y escalables en
+              constante evolución, con el propósito de llevar nuestro impacto
+              positivo y duradero a personas de otras localidades. 
+            </div>
+          </div>
+          <div className="col-md-6 p-8">
+            <img
+              className="w-full mb-8 rounded-[10px]"
+              src="src/assets/ADN-cultura.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <br />
-      <div className="flex flex-row justify-content-center p-12">
-        {/* SECCION COMO SOMOS */}
-        <div className="col-md-4 w-4/5">
-          <img src="src/assets/ADN-mision.jpg" alt="" />
-        </div>
-        <div className="col-md-4 w-4/5">
-          <img src="src/assets/ADN-vision.jpg" alt="" />
-        </div>
-        <div className="col-md-4 w-4/5">
-          <img src="src/assets/ADN-cultura.png" alt="" />
-        </div>
-      </div>
-      <div className="flex flex-row justify-content-center p-12">
-        {/* SECCION COMO SOMOS */}
-        <div className={"col-md-4 " + styles.textcard}>
-        <div className="flex px-8">
-            "Trabajamos con personas alineadas con nuestra visión, empleando la
-            cercanía como vehículo de nuestros valores, porque sólo estando
-            cerca es posible identificar los matices que hacen único el talento
-            de las personas y grandes a los proyectos de nuestros"
-          </div>
-        </div>
-        <div className={"col-md-4 " + styles.textcard}>
-        <div className="flex px-8">
-            "Trabajamos con personas alineadas con nuestra visión, empleando la
-            cercanía como vehículo de nuestros valores, porque sólo estando
-            cerca es posible identificar los matices que hacen único el talento
-            de las personas y grandes a los proyectos de nuestros"
-          </div>
-        </div>
-        <div className={"col-md-4 " + styles.textcard}>
-        <div className="flex px-8">
-            "Trabajamos con personas alineadas con nuestra visión, empleando la
-            cercanía como vehículo de nuestros valores, porque sólo estando
-            cerca es posible identificar los matices que hacen único el talento
-            de las personas y grandes a los proyectos de nuestros"
-          </div>
-        </div>
-      </div>
     </>
   );
 };
 
-export default ADNCoopTech;
+export default Comosomos;

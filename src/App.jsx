@@ -8,6 +8,9 @@ import Servicios from "./Views/Servicios";
 import Login from "./Views/Login";
 import ComoSomos from "./Views/ADNCoopTech/ComoSomos";
 import QuienesSomos from "./Views/ADNCoopTech/QuienesSomos";
+import CertificacionesPremios from "./Views/CertificacionesPremios";
+import CasosExito from "./Views/CasosExito";
+import CommunityNews from "./Views/CommunityNews";
 import Footer from "./components/Footer";
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
         <Routes>
           <Route path="/ComoSomos" element={<ComoSomos />} />
           <Route path="/QuienesSomos" element={<QuienesSomos />} />
+          <Route path="/CertificacionesPremios" element={<CertificacionesPremios />} />
+          <Route path="/CommunityNews" element={<CommunityNews />} />
+          <Route path="/CasosExito" element={<CasosExito />} />
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<NotFound />} />
 

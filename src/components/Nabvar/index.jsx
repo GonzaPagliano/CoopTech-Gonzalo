@@ -141,21 +141,12 @@ const Contenido = () => {
           </div>
         </div>
         <div className="flex flex-col basis-1/3">
-          <Link className="mx-auto mb-2" to="/">
+          <Link className="mx-auto mb-2" to="/CasosExito">
             <button className="text-xl font-semibold text-black underline">
               CASOS DE EXITO
             </button>
           </Link>
-          <div className="mx-auto mb-2">
-            <ul className={" justif-content-center text-white" + styles.list}>
-              <li className="text-gray-500">
-                <DoneIcon /> Como Somos
-              </li>
-              <li className="text-gray-500">
-                <DoneIcon /> Quienes Somos
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
 
@@ -163,14 +154,14 @@ const Contenido = () => {
       {/* INICIO SEGUNDA SECCION */}
       <div className="flex flex-col gap-4 md:flex-row my-12 mt-12 text-2xl">
         <div className="flex flex-col basis-1/3">
-          <Link className="mx-auto mb-2" to="/">
+          <Link className="mx-auto mb-2" to="/CertificacionesPremios">
             <button className="text-xl font-semibold text-black underline">
               CERTIFICACIONES Y PREMIOS
             </button>
           </Link>
         </div>
         <div className="flex flex-col basis-1/3">
-          <Link className="mx-auto mb-2" to="/">
+          <Link className="mx-auto mb-2" to="/CommunityNews">
             <button className="text-xl font-semibold text-black underline">
               COMUNIDAD / NOTICIAS
             </button>
