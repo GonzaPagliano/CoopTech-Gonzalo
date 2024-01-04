@@ -7,14 +7,17 @@ import StormIcon from "@mui/icons-material/Storm";
 import CloudCircleIcon from "@mui/icons-material/CloudCircle";
 import WebhookIcon from "@mui/icons-material/Webhook";
 
+// Modal
+
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 
-//media
+// Media
 
 import PersonaCelu from "/src/assets/PersonaCelu.jpg";
 import Tarjeta from "../../components/Tarjeta";
 import Video from "/src/assets/VideoInicio.mp4";
+import imgcard from "/src/assets/Logo-CoopTech.jpg"
 
 const style = {
   position: "absolute",
@@ -98,6 +101,7 @@ const MediaCard = () => {
         </h1>
       </div>
 
+
       {/* ----MODAL----- */}
       <Modal
         open={open}
@@ -129,61 +133,60 @@ const MediaCard = () => {
           </Typography>
         </Box>
       </Modal>
+      
 
       {/* --------- */}
 
-      <section>
-        <section id="miElemento">
-          <div className="flex justify-evenly my-24 text-center">
-            <Tarjeta
-              nombre="Oficina Virtual"
-              img="/src/assets/Logo-CoopTech.jpg"
-              icono={<HubIcon />}
-              descripcion="Aprovechá todos los beneficios que tiene!
+      <section id="miElemento">
+        <div className="flex justify-evenly my-24 text-center">
+          <Tarjeta
+            nombre="Oficina Virtual"
+            img={imgcard}
+            icono={<HubIcon />}
+            descripcion="Aprovechá todos los beneficios que tiene!
 Una forma distinta y nueva de administrar tus servicios..."
-            />
-            <Tarjeta
-              nombre="Reconecta"
-              img="/src/assets/Logo-CoopTech.jpg"
-              icono={<ElectricalServicesIcon />}
-              descripcion="Aprovechá todos los beneficios que tiene!
+          />
+          <Tarjeta
+            nombre="Reconecta"
+            img={imgcard}
+            icono={<ElectricalServicesIcon />}
+            descripcion="Aprovechá todos los beneficios que tiene!
 Una forma distinta y nueva de administrar tus servicios..."
-            />
-            <Tarjeta
-              nombre="+ AGUA"
-              img="/src/assets/Logo-CoopTech.jpg"
-              icono={<StormIcon />}
-              descripcion="Aprovechá todos los beneficios que tiene!
+          />
+          <Tarjeta
+            nombre="+ AGUA"
+            img={imgcard}
+            icono={<StormIcon />}
+            descripcion="Aprovechá todos los beneficios que tiene!
 Una forma distinta y nueva de administrar tus servicios..."
-            />
-          </div>
+          />
+        </div>
 
-          {/* // SEGUNDA FILA //  */}
+        {/* // SEGUNDA FILA //  */}
 
-          <div className="flex justify-evenly my-24 text-center">
-            <Tarjeta
-              nombre="Cloud Service"
-              img="/src/assets/Logo-CoopTech.jpg"
-              icono={<CloudCircleIcon />}
-              descripcion="Aprovechá todos los beneficios que tiene!
+        <div className="flex justify-evenly my-24 text-center">
+          <Tarjeta
+            nombre="Cloud Service"
+            img={imgcard}
+            icono={<CloudCircleIcon />}
+            descripcion="Aprovechá todos los beneficios que tiene!
 Una forma distinta y nueva de administrar tus servicios..."
-            />
-            <Tarjeta
-              nombre="Provisión"
-              img="/src/assets/Logo-CoopTech.jpg"
-              icono={<WebhookIcon />}
-              descripcion="Aprovechá todos los beneficios que tiene!
+          />
+          <Tarjeta
+            nombre="Provisión"
+            img={imgcard}
+            icono={<WebhookIcon />}
+            descripcion="Aprovechá todos los beneficios que tiene!
 Una forma distinta y nueva de administrar tus servicios..."
-            />
-            <Tarjeta
-              nombre="Desarrollos Especiales"
-              img="/src/assets/Logo-CoopTech.jpg"
-              icono={<HubIcon />}
-              descripcion="Aprovechá todos los beneficios que tiene!
+          />
+          <Tarjeta
+            nombre="Desarrollos Especiales"
+            img={imgcard}
+            icono={<HubIcon />}
+            descripcion="Aprovechá todos los beneficios que tiene!
 Una forma distinta y nueva de administrar tus servicios..."
-            />
-          </div>
-        </section>
+          />
+        </div>
       </section>
     </>
   );

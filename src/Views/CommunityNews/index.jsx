@@ -6,17 +6,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
-// Media
-
-import News from "/src/assets/community.png"
-import Logo3 from "/src/assets/Logo-3.jpg"
-
 const Certifpremios = () => {
   return (
     <>
       <div style={{ position: "relative" }}>
         <div>
-          <img className="w-full" src={News} alt="" />
+          <img className="w-full" src="src/assets/community.png" alt="" />
         </div>
         <h1
           style={{
@@ -29,12 +24,12 @@ const Certifpremios = () => {
           }}
           className="w-3/4 z-50 text-white"
         >
-          COMUNIDAD Y NOTICIAS
+          CERTIFICACIONES Y PREMIOS
         </h1>
       </div>
 
       <div className="flex justify-center py-20 text-[25px]">
-        <h1>Noticias sobre nuestros productos..</h1>
+        <h1>ESTOS SON ALGUNOS DE LAS DISTINCIONES QUE HEMOS RECIBIDO..</h1>
       </div>
       <div className="flex justify-center">
         <h3>
@@ -51,7 +46,7 @@ const Certifpremios = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  src={Logo3}
+                  src="src/assets/Logo-3.jpg"
                   alt="green iguana"
                 />
                 <CardContent>
@@ -73,7 +68,7 @@ const Certifpremios = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  src={Logo3}
+                  src="src/assets/Logo-3.jpg"
                   alt="green iguana"
                 />
                 <CardContent>
@@ -93,7 +88,7 @@ const Certifpremios = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  src={Logo3}
+                  src="src/assets/Logo-3.jpg"
                   alt="green iguana"
                 />
                 <CardContent>
@@ -117,7 +112,7 @@ const Certifpremios = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  src={Logo3}
+                  src="src/assets/Logo-3.jpg"
                   alt="green iguana"
                 />
                 <CardContent>
@@ -139,7 +134,7 @@ const Certifpremios = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  src={Logo3}
+                  src="src/assets/Logo-3.jpg"
                   alt="green iguana"
                 />
                 <CardContent>
