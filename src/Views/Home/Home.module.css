@@ -1,5 +1,5 @@
 .video{
-opacity: 90%;
+opacity: black 70%;
 
 }
 
@@ -8,4 +8,12 @@ opacity: 90%;
     font-weight: lighter;
     font-size: 30px;
     color: rgb(255, 255, 255);
+}
+
+.divnegro{
+    top: 0;
+    background-color: black;
+    opacity: 30%;
+    position: absolute;
+    height: 100%;
 }

@@ -6,6 +6,10 @@ import styles from "./navbar.module.css";
 import DoneIcon from "@mui/icons-material/Done";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
+//media
+
+import LogoBlancoSinfondo from "/src/assets/LogoBlancoSinfondo.png"
+
 const Navbar = () => {
   const navbarRef = useRef(null);
 
@@ -49,7 +53,7 @@ const Navbar = () => {
           <div className="w-1/2 flex justify-center">
             <Link to="/">
               <img
-                src="src/assets/Logo-3-sinfondo.png"
+                src={LogoBlancoSinfondo}
                 className="w-48"
                 alt=""
               />
@@ -190,7 +194,7 @@ const Contenido = () => {
       <div className="flex justify-center  opacity-25">
         <img
           className="w-60 mb-20"
-          src="src/assets/Logo-3-sinfondo.png"
+          src={LogoBlancoSinfondo}
           alt=""
         />
       </div>

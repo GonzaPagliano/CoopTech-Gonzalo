@@ -1,22 +1,24 @@
 import React from "react";
+import styles from "./Home.module.css";
 
-import styles from "./Home.module.css"
+// Media
+import Imageninicio from "/src/assets/ciudad.jpg";
+import Logocooptech5 from "/src/assets/Logo-CoopTech5.png";
 
 const Home = () => {
   return (
     <>
-      <div style={{ position: "relative"}}>
-        <video
-          className={"w-full flex " + styles.video}
-          loop={true}
-          muted={true}
-          autoplay="true"
-          playsinline={true}
-        >
-          <source src="src/assets/Principal-4.mp4" />
-        </video>
+      <div style={{ position: "relative" }}>
+        <div>
+          <img
+            className={"w-full flex " + styles.video}
+            src={Imageninicio}
+            alt=""
+          />
+          <div className={"w-full " + styles.divnegro}></div>
+        </div>
         <img
-          src="src/assets/Logo-CoopTech5.png"
+          src={Logocooptech5}
           style={{
             position: "absolute",
             top: "30%",
@@ -34,15 +36,13 @@ const Home = () => {
             left: "35%",
             transform: "translate(-50%, -50%)",
             zIndex: "1",
-            
           }}
           className={"w-1/2 z-50 " + styles.texto}
         >
-          Para evolucionar los servicios esenciales, con adaptabilidad y escalabilidad
+          Para evolucionar los servicios esenciales, con adaptabilidad y
+          escalabilidad
         </h1>
       </div>
-
-      
     </>
   );
 };

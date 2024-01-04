@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./ADNcooptech.module.css";
 
+// Media 
+
+import ADNquienessomos from "/src/assets/ADN-quienessomos.jpg"
+
 const Quienessomos = () => {
   return (
     <>
@@ -8,7 +12,7 @@ const Quienessomos = () => {
         <div>
           <img
             className="w-full"
-            src="src/assets/ADN-quienessomos.jpg"
+            src={ADNquienessomos}
             alt=""
           />
         </div>

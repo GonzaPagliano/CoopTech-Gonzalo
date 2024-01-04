@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
-import MenuIcon from "@mui/icons-material/Menu";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
+
+// Media
+
+import LogoNegro from "/src/assets/LogonegroSinfondo.png"
 
 const Footer = () => {
   return (
     <div class={" flex justify-around " + styles.footer}>
       <div className="w-60 mr-9 flex">
         <div class="w-2/5 flex-grow flex justify-start items-center">
-          <img src="src/assets/Logo-1-sinfondo.png" class="w-80" alt="" />
+          <img src={LogoNegro} class="w-80" alt="" />
         </div>
       </div>
       <div className="flex-grow flex justify-start items-center text-xl ">

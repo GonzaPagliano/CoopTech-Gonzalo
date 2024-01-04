@@ -1,9 +1,4 @@
 import React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import styles from "./services.module.css";
 import HubIcon from "@mui/icons-material/Hub";
@@ -11,8 +6,15 @@ import ElectricalServicesIcon from "@mui/icons-material/ElectricalServices";
 import StormIcon from "@mui/icons-material/Storm";
 import CloudCircleIcon from "@mui/icons-material/CloudCircle";
 import WebhookIcon from "@mui/icons-material/Webhook";
+
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
+
+//media
+
+import PersonaCelu from "/src/assets/PersonaCelu.jpg";
+import Tarjeta from "../../components/Tarjeta";
+import Video from "/src/assets/VideoInicio.mp4";
 
 const style = {
   position: "absolute",
@@ -46,11 +48,7 @@ const MediaCard = () => {
     <>
       <div style={{ position: "relative" }}>
         <div>
-          <img
-            className="w-full opacity-70"
-            src="src/assets/persona-celu.jpg"
-            alt=""
-          />
+          <img className="w-full opacity-70" src={PersonaCelu} alt="" />
         </div>
         <h1
           style={{
@@ -115,7 +113,7 @@ const MediaCard = () => {
             autoplay="true"
             playsinline={true}
           >
-            <source src="src/assets/Principal-4.mp4" />
+            <source src={Video} />
           </video>
           <Typography
             id="modal-modal-title"
@@ -133,183 +131,59 @@ const MediaCard = () => {
       </Modal>
 
       {/* --------- */}
-      <section id="miElemento">
-        <div className="flex justify-evenly my-24 text-center">
-          <Card className={"max-w-[340px] " + styles.cardgeneral}>
-            <CardMedia
-              sx={{ height: 150, border: "black" }}
-              image="src/assets/Logo-CoopTech.jpg"
-              title="Oficina Virtual"
-            />
-            <CardContent className="text-white">
-              <Typography gutterBottom variant="h5" component="div">
-                <HubIcon /> Oficina Virtual
-              </Typography>
-              <Typography variant="body2" color="text.white">
-                Aprovechá todos los beneficios que tiene! Una forma distinta y
-                nueva de administrar tus servicios...
-              </Typography>
-            </CardContent>
-            <CardActions className="flex justify-center">
-              <Button
-                onClick={handleOpen}
-                className={"text-white " + styles.botoncard}
-                variant="contained"
-                disableElevation
-              >
-                Ver Más
-              </Button>
-            </CardActions>
-          </Card>
-          {/* ------ */}
-          <Card className={"max-w-[340px] " + styles.cardgeneral}>
-            <CardMedia
-              sx={{ height: 150 }}
-              image="src/assets/Logo-CoopTech.jpg"
-              title="Reconecta"
-            />
-            <CardContent className="text-white">
-              <Typography gutterBottom variant="h5" component="div">
-                <ElectricalServicesIcon /> Reconecta
-              </Typography>
-              <Typography variant="body2" color="text.white">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions className="flex justify-center">
-              <Button
-                onClick={handleOpen}
-                className={"text-white " + styles.botoncard}
-                variant="contained"
-                disableElevation
-              >
-                Ver Más
-              </Button>
-            </CardActions>
-          </Card>
-          {/* ------ */}
-          <Card className={"max-w-[340px] " + styles.cardgeneral}>
-            <CardMedia
-              sx={{ height: 150 }}
-              image="src/assets/Logo-CoopTech.jpg"
-              title="+ Agua"
-            />
-            <CardContent className="text-white">
-              <Typography
-                gutterBottom
-                color="text.white"
-                variant="h5"
-                component="div"
-              >
-                <StormIcon /> + Agua
-              </Typography>
-              <Typography variant="body2" color="text.white">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions className="flex justify-center">
-              <Button
-                onClick={handleOpen}
-                className={"text-white " + styles.botoncard}
-                variant="contained"
-                disableElevation
-              >
-                Ver Más
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
 
-        {/* ----- */}
-        <div className="flex justify-evenly my-24 text-center">
-          <Card className={"max-w-[340px] " + styles.cardgeneral}>
-            <CardMedia
-              sx={{ height: 150, border: "black" }}
-              image="src/assets/Logo-CoopTech.jpg"
-              title="Oficina Virtual"
+      <section>
+        <section id="miElemento">
+          <div className="flex justify-evenly my-24 text-center">
+            <Tarjeta
+              nombre="Oficina Virtual"
+              img="/src/assets/Logo-CoopTech.jpg"
+              icono={<HubIcon />}
+              descripcion="Aprovechá todos los beneficios que tiene!
+Una forma distinta y nueva de administrar tus servicios..."
             />
-            <CardContent className="text-white">
-              <Typography gutterBottom variant="h5" component="div">
-                <CloudCircleIcon /> Cloud Services
-              </Typography>
-              <Typography variant="body2" color="text.white">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions className="flex justify-center">
-              <Button
-                className={"text-white " + styles.botoncard}
-                href=""
-                variant="contained"
-                disableElevation
-              >
-                Ver Más
-              </Button>
-            </CardActions>
-          </Card>
-          {/* ------ */}
-          <Card className={"max-w-[340px] " + styles.cardgeneral}>
-            <CardMedia
-              sx={{ height: 150 }}
-              image="src/assets/Logo-CoopTech.jpg"
-              title="Reconecta"
+            <Tarjeta
+              nombre="Reconecta"
+              img="/src/assets/Logo-CoopTech.jpg"
+              icono={<ElectricalServicesIcon />}
+              descripcion="Aprovechá todos los beneficios que tiene!
+Una forma distinta y nueva de administrar tus servicios..."
             />
-            <CardContent className="text-white">
-              <Typography gutterBottom variant="h5" component="div">
-                <HubIcon /> Provisión
-              </Typography>
-              <Typography variant="body2" color="text.white">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions className="flex justify-center">
-              <Button
-                className={"text-white " + styles.botoncard}
-                href=""
-                variant="contained"
-                disableElevation
-              >
-                Ver Más
-              </Button>
-            </CardActions>
-          </Card>
-          {/* ------ */}
-          <Card className={"max-w-[340px] " + styles.cardgeneral}>
-            <CardMedia
-              sx={{ height: 150 }}
-              image="src/assets/Logo-CoopTech.jpg"
-              title="+ Agua"
+            <Tarjeta
+              nombre="+ AGUA"
+              img="/src/assets/Logo-CoopTech.jpg"
+              icono={<StormIcon />}
+              descripcion="Aprovechá todos los beneficios que tiene!
+Una forma distinta y nueva de administrar tus servicios..."
             />
-            <CardContent className="text-white">
-              <Typography
-                gutterBottom
-                color="text.white"
-                variant="h5"
-                component="div"
-              >
-                <WebhookIcon /> Desarrollos Especiales
-              </Typography>
-              <Typography variant="body2" color="text.white">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions className="flex justify-center">
-              <Button
-                className={"text-white " + styles.botoncard}
-                href="https://app.coopmorteros.coop/"
-                variant="contained"
-                disableElevation
-              >
-                Ver Más
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
+          </div>
+
+          {/* // SEGUNDA FILA //  */}
+
+          <div className="flex justify-evenly my-24 text-center">
+            <Tarjeta
+              nombre="Cloud Service"
+              img="/src/assets/Logo-CoopTech.jpg"
+              icono={<CloudCircleIcon />}
+              descripcion="Aprovechá todos los beneficios que tiene!
+Una forma distinta y nueva de administrar tus servicios..."
+            />
+            <Tarjeta
+              nombre="Provisión"
+              img="/src/assets/Logo-CoopTech.jpg"
+              icono={<WebhookIcon />}
+              descripcion="Aprovechá todos los beneficios que tiene!
+Una forma distinta y nueva de administrar tus servicios..."
+            />
+            <Tarjeta
+              nombre="Desarrollos Especiales"
+              img="/src/assets/Logo-CoopTech.jpg"
+              icono={<HubIcon />}
+              descripcion="Aprovechá todos los beneficios que tiene!
+Una forma distinta y nueva de administrar tus servicios..."
+            />
+          </div>
+        </section>
       </section>
     </>
   );

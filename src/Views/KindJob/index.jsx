@@ -6,11 +6,7 @@ const Quienessomos = () => {
     <>
       <div style={{ position: "relative" }}>
         <div>
-          <img
-            className="w-full"
-            src="src/assets/empleo.jpg"
-            alt=""
-          />
+          <img className="w-full" src="src/assets/empleo.jpg" alt="" />
         </div>
         <h1
           style={{
@@ -44,12 +40,9 @@ const Quienessomos = () => {
       <div className="flex flex-row justify-content-center p-14">
         <div className={"col-md-8 p-8 " + styles.textcard}>
           <div className="flex px-8">
-            Nos especializamos en el desarrollo de soluciones integrales, tanto
-            de software como de hardware, para el monitoreo, control y gestión
-            de sistemas complejos: redes eléctricas, de agua potable,
-            telecomunicaciones y sistemas de gestión operativa del equipo de
-            trabajo, abordando desafíos comunes en empresas y organizaciones que
-            ofrecen servicios esenciales.
+            Buscamos talentos, innovadores, capaces trabajar en equipo para
+            crear productos de impacto, para la gestión de servicios
+            esenciales. 
           </div>
         </div>
       </div>

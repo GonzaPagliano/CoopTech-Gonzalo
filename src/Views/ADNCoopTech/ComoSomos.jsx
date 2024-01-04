@@ -1,12 +1,19 @@
 import React from "react";
 import styles from "./ADNcooptech.module.css";
 
+// Media
+
+import ADNComoSomos from "/src/assets/ADN-comosomos.png"
+import ADNmision from "/src/assets/ADN-mision.jpg"
+import ADNvision from "/src/assets/ADN-vision.jpg"
+import ADNcultura from "/src/assets/ADN-cultura.png"
+
 const Comosomos = () => {
   return (
     <>
       <div style={{ position: "relative" }}>
         <div>
-          <img className="w-full" src="src/assets/ADN-comosomos.png" alt="" />
+          <img className="w-full" src={ADNComoSomos} alt="" />
         </div>
         <h1
           style={{
@@ -49,7 +56,7 @@ const Comosomos = () => {
           <div className="col-md-6 p-8">
             <img
               className="w-full mb-8 rounded-[10px]"
-              src="src/assets/ADN-mision.jpg"
+              src={ADNmision}
               alt=""
             />
           </div>
@@ -58,7 +65,7 @@ const Comosomos = () => {
           <div className="col-md-6 p-8">
             <img
               className="w-full mb-8 rounded-[10px]"
-              src="src/assets/ADN-vision.jpg"
+              src={ADNvision}
               alt=""
             />
           </div>
@@ -98,7 +105,7 @@ const Comosomos = () => {
           <div className="col-md-6 p-8">
             <img
               className="w-full mb-8 rounded-[10px]"
-              src="src/assets/ADN-cultura.png"
+              src={ADNcultura}
               alt=""
             />
           </div>
