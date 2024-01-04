@@ -11,6 +11,7 @@ import QuienesSomos from "./Views/ADNCoopTech/QuienesSomos";
 import CertificacionesPremios from "./Views/CertificacionesPremios";
 import CasosExito from "./Views/CasosExito";
 import CommunityNews from "./Views/CommunityNews";
+import KindJob from "./Views/KindJob";
 import Footer from "./components/Footer";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/CertificacionesPremios" element={<CertificacionesPremios />} />
           <Route path="/CommunityNews" element={<CommunityNews />} />
           <Route path="/CasosExito" element={<CasosExito />} />
+          <Route path="/KindJob" element={<KindJob />} />
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<NotFound />} />
 

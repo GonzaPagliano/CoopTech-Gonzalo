@@ -28,7 +28,7 @@ export default function InputAdornments() {
         <h1
           style={{
             position: "absolute",
-            top: "50%",
+            top: "30%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             zIndex: "1",
@@ -36,7 +36,7 @@ export default function InputAdornments() {
           }}
           className="w-3/4 z-50 text-white"
         >
-          CERTIFICACIONES Y PREMIOS
+          Iniciar Sesión
         </h1>
       </div>
       <div className="flex justify-center py-20 text-[25px]">

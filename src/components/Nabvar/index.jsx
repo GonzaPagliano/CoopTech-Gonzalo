@@ -146,7 +146,6 @@ const Contenido = () => {
               CASOS DE EXITO
             </button>
           </Link>
-
         </div>
       </div>
 
@@ -168,16 +167,16 @@ const Contenido = () => {
           </Link>
         </div>
         <div className="flex flex-col basis-1/3">
-          <Link className="mx-auto mb-2" to="/">
-            <button className="text-xl font-semibold text-black underline">
-              CARRERA
-            </button>
-          </Link>
+          <button className="text-xl font-semibold text-black underline">
+            CARRERA
+          </button>
           <div className="mx-auto mb-2">
             <ul className={" justif-content-center text-white" + styles.list}>
-              <li className="text-gray-500">
-                <DoneIcon /> Kind Job
-              </li>
+              <Link className="mx-auto mb-2" to="/Kindjob">
+                <li className="text-gray-500">
+                  <DoneIcon /> Kind Job
+                </li>
+              </Link>
               <Link to={"https://coopmorteros.com/?8"} target="blank">
                 <li className="text-gray-500">
                   <DoneIcon /> Ofertas de Empleo

@@ -76,11 +76,7 @@ const MediaCard = () => {
           }}
           className="w-3/4 z-50 text-neutral-800"
         >
-          <div
-            className=
-            "bg-zinc-200 opacity-50 p-2 rounded-[12px]"
-          >
-
+          <div className="bg-zinc-200 opacity-50 p-2 rounded-[12px]">
             Creamos soluciones completas, Para que tus redes eléctricas, de agua
             potable, telecomunicaciones y otros servicios funcionen mejor, de
             manera segura y eficiente. Estamos para impulsar juntos, la
@@ -121,20 +117,25 @@ const MediaCard = () => {
           >
             <source src="src/assets/Principal-4.mp4" />
           </video>
-          <Typography id="modal-modal-title" className="text-center" variant="h6" component="h2">
+          <Typography
+            id="modal-modal-title"
+            className="text-center"
+            variant="h6"
+            component="h2"
+          >
             OFICINA VIRTUAL
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Aprovechá todos los beneficios que tiene! Una forma distinta y nueva de administrar tus servicios...
+            Aprovechá todos los beneficios que tiene! Una forma distinta y nueva
+            de administrar tus servicios...
           </Typography>
         </Box>
       </Modal>
 
-
       {/* --------- */}
       <section id="miElemento">
         <div className="flex justify-evenly my-24 text-center">
-          <Card className={"max-w-[345px] " + styles.cardgeneral}>
+          <Card className={"max-w-[340px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150, border: "black" }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -161,7 +162,7 @@ const MediaCard = () => {
             </CardActions>
           </Card>
           {/* ------ */}
-          <Card className={"max-w-[345px] " + styles.cardgeneral}>
+          <Card className={"max-w-[340px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150 }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -178,8 +179,8 @@ const MediaCard = () => {
             </CardContent>
             <CardActions className="flex justify-center">
               <Button
+                onClick={handleOpen}
                 className={"text-white " + styles.botoncard}
-                href=""
                 variant="contained"
                 disableElevation
               >
@@ -188,7 +189,7 @@ const MediaCard = () => {
             </CardActions>
           </Card>
           {/* ------ */}
-          <Card className={"max-w-[345px] " + styles.cardgeneral}>
+          <Card className={"max-w-[340px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150 }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -210,8 +211,8 @@ const MediaCard = () => {
             </CardContent>
             <CardActions className="flex justify-center">
               <Button
+                onClick={handleOpen}
                 className={"text-white " + styles.botoncard}
-                href=""
                 variant="contained"
                 disableElevation
               >
@@ -223,7 +224,7 @@ const MediaCard = () => {
 
         {/* ----- */}
         <div className="flex justify-evenly my-24 text-center">
-          <Card className={"max-w-[345px] " + styles.cardgeneral}>
+          <Card className={"max-w-[340px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150, border: "black" }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -250,7 +251,7 @@ const MediaCard = () => {
             </CardActions>
           </Card>
           {/* ------ */}
-          <Card className={"max-w-[345px] " + styles.cardgeneral}>
+          <Card className={"max-w-[340px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150 }}
               image="src/assets/Logo-CoopTech.jpg"
@@ -277,7 +278,7 @@ const MediaCard = () => {
             </CardActions>
           </Card>
           {/* ------ */}
-          <Card className={"max-w-[345px] " + styles.cardgeneral}>
+          <Card className={"max-w-[340px] " + styles.cardgeneral}>
             <CardMedia
               sx={{ height: 150 }}
               image="src/assets/Logo-CoopTech.jpg"

@@ -1,6 +1,7 @@
 import React from "react";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
+import Styles from "./casosexito.module.css"
 
 const Casosexitos = () => {
   return (
@@ -24,7 +25,7 @@ const Casosexitos = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center py-20 text-[25px]">
+      <div className={"flex justify-center " + Styles.titulo}>
         <h1>Personas y Empresas que confian en Nosotros..</h1>
       </div>
 
