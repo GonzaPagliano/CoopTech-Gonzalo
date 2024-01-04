@@ -43,7 +43,7 @@ const Navbar = () => {
               />
             </IconButton>
             <Link className="my-auto mr-auto" to="/login">
-              <button className="mx-5 text-black ">INTRANET</button>
+              <button className="mx-5 text-white ">INTRANET</button>
             </Link>
           </div>
           <div className="w-1/2 flex justify-center">
@@ -67,7 +67,7 @@ const Contenido = () => {
   return (
     <>
       {/* INICIO PRIMERA SECCION */}
-      <div className="flex flex-col gap-4 md:flex-row my-12 mt-16 text-2xl">
+      <div className="flex flex-col gap-4 md:flex-row mt-8 text-xl">
         <div className="flex flex-col basis-1/3">
           <Link className="mx-auto mb-2" to="/services">
             <button className="text-xl font-semibold text-black underline">
@@ -146,13 +146,13 @@ const Contenido = () => {
               CASOS DE EXITO
             </button>
           </Link>
-          
+
         </div>
       </div>
 
       {/* FIN PRIMERA SECCION */}
       {/* INICIO SEGUNDA SECCION */}
-      <div className="flex flex-col gap-4 md:flex-row my-12 mt-12 text-2xl">
+      <div className="flex flex-col gap-4 md:flex-row mt-4 text-2xl">
         <div className="flex flex-col basis-1/3">
           <Link className="mx-auto mb-2" to="/CertificacionesPremios">
             <button className="text-xl font-semibold text-black underline">
@@ -178,17 +178,19 @@ const Contenido = () => {
               <li className="text-gray-500">
                 <DoneIcon /> Kind Job
               </li>
-              <li className="text-gray-500">
-                <DoneIcon /> Ofertas de Empleo
-              </li>
+              <Link to={"https://coopmorteros.com/?8"} target="blank">
+                <li className="text-gray-500">
+                  <DoneIcon /> Ofertas de Empleo
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
       </div>
       {/* FIN SEGUNDA SECCION */}
-      <div className="flex justify-center py-20 opacity-25">
+      <div className="flex justify-center  opacity-25">
         <img
-          className="w-80 mb-20"
+          className="w-60 mb-20"
           src="src/assets/Logo-3-sinfondo.png"
           alt=""
         />

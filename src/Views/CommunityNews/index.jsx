@@ -34,14 +34,14 @@ const Certifpremios = () => {
       <div className="flex justify-center">
         <h3>
           Espacio de posteo de noticias y visibilizarían de presencia en
-          eventos. 
+          eventos.
         </h3>
       </div>
 
       <section id="noticias_comunidad">
         <div className="grid grid-flow-col justify-stretch py-20">
           <div className="flex justify-center col-md-4">
-            <Card className={"max-w-[500px] " + styles.cardnews}>
+            <Card className={"max-w-[400px] " + styles.cardnews}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -54,16 +54,16 @@ const Certifpremios = () => {
                     COOPTECH FUE PRENSENTADO EN BUENOS AIRES
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Nos complace enormemente compartir una noticia que llena de orgullo a toda la familia CoopMorteros.
+
+                    Egresado de la carrera de Ingeniería Electrónica, Lorenzo Depetris alcanzó el mejor promedio (9.14) en el rango de ingenierías de UTN San Francisco.
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </div>
           <div className="flex justify-center col-md-4">
-            <Card className={"max-w-[500px] " + styles.cardnews}>
+            <Card className={"max-w-[400px] " + styles.cardnews}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -76,16 +76,14 @@ const Certifpremios = () => {
                     SE LANZA COOPTECH PARA EMPRESAS
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Nuestros ingenieros Leonardo Depetris y Lucas Ponce compartieron conocimientos clave en una charla técnica de agua y saneamiento, a través de Zoom.
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </div>
           <div className="flex justify-center col-md-4">
-            <Card className={"max-w-[500px] " + styles.cardnews}>
+            <Card className={"max-w-[400px] " + styles.cardnews}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -98,9 +96,9 @@ const Certifpremios = () => {
                     IT PRESENTA COOPTECH
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Avanzamos con la instalación de los paneles solares en nuestro Parque Generador Comunitario.
+
+                    Un paso más cerca de un futuro más sostenible para nuestra comunidad
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -109,7 +107,7 @@ const Certifpremios = () => {
         </div>
         <div className="grid grid-flow-col justify-stretch py-20">
           <div className="flex justify-center col-md-4">
-            <Card className={"max-w-[500px] " + styles.cardnews}>
+            <Card className={"max-w-[400px] " + styles.cardnews}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -122,16 +120,16 @@ const Certifpremios = () => {
                     COOPTECH FUE PRENSENTADO EN BUENOS AIRES
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Nos complace enormemente compartir una noticia que llena de orgullo a toda la familia CoopMorteros.
+
+                    Egresado de la carrera de Ingeniería Electrónica, Lorenzo Depetris alcanzó el mejor promedio (9.14) en el rango de ingenierías de UTN San Francisco.
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </div>
           <div className="flex justify-center col-md-4">
-            <Card className={"max-w-[500px] " + styles.cardnews}>
+            <Card className={"max-w-[400px] " + styles.cardnews}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -144,9 +142,9 @@ const Certifpremios = () => {
                     SE LANZA COOPTECH PARA EMPRESAS
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Avanzamos con la instalación de los paneles solares en nuestro Parque Generador Comunitario.
+
+                    Un paso más cerca de un futuro más sostenible para nuestra comunidad
                   </Typography>
                 </CardContent>
               </CardActionArea>

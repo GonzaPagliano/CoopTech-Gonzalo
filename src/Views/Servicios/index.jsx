@@ -21,9 +21,10 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: 900,
   bgcolor: "background.paper",
-  border: "2px solid #000",
+  border: "1px solid #000",
+  rounded: "12px",
   boxShadow: 24,
-  p: 4,
+  p: 2,
 };
 
 const MediaCard = () => {
@@ -54,11 +55,11 @@ const MediaCard = () => {
         <h1
           style={{
             position: "absolute",
-            top: "30%",
+            top: "20%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             zIndex: "1",
-            fontSize: "50px",
+            fontSize: "40px",
           }}
           className="w-3/4 z-50 text-neutral-950"
         >
@@ -67,26 +68,25 @@ const MediaCard = () => {
         <h1
           style={{
             position: "absolute",
-            top: "45%",
+            top: "35%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             zIndex: "1",
-            fontSize: "20px",
+            fontSize: "17px",
           }}
           className="w-3/4 z-50 text-neutral-800"
         >
           <div
-            className={
-              "bg-zinc-200 opacity-50 p-4 rounded-[12px] " + styles.resumen
-            }
+            className=
+            "bg-zinc-200 opacity-50 p-2 rounded-[12px]"
           >
-            {" "}
+
             Creamos soluciones completas, Para que tus redes eléctricas, de agua
             potable, telecomunicaciones y otros servicios funcionen mejor, de
-            manera segura y eficiente.  Estamos para impulsar juntos, la
-            transformación digital en la gestión de los servicios esenciales. 
+            manera segura y eficiente. Estamos para impulsar juntos, la
+            transformación digital en la gestión de los servicios esenciales.
             COOPTECH es tu aliado tecnológico para una mejor gestión de los
-            servicios esenciales. {" "}
+            servicios esenciales.
           </div>
 
           <br />
@@ -103,6 +103,33 @@ const MediaCard = () => {
           </div>
         </h1>
       </div>
+
+      {/* ----MODAL----- */}
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box className="rounded-[12px]" sx={style}>
+          <video
+            className={"w-full flex " + styles.video}
+            loop={true}
+            muted={true}
+            autoplay="true"
+            playsinline={true}
+          >
+            <source src="src/assets/Principal-4.mp4" />
+          </video>
+          <Typography id="modal-modal-title" className="text-center" variant="h6" component="h2">
+            OFICINA VIRTUAL
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Aprovechá todos los beneficios que tiene! Una forma distinta y nueva de administrar tus servicios...
+          </Typography>
+        </Box>
+      </Modal>
+
 
       {/* --------- */}
       <section id="miElemento">
@@ -133,32 +160,6 @@ const MediaCard = () => {
               </Button>
             </CardActions>
           </Card>
-
-          <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-          >
-            <Box sx={style}>
-              <video
-                className={"w-full flex " + styles.video}
-                loop={true}
-                muted={true}
-                autoplay="true"
-                playsinline={true}
-              >
-                <source src="src/assets/Principal-4.mp4" />
-              </video>
-              <Typography id="modal-modal-title" variant="h6" component="h2">
-                Text in a modal
-              </Typography>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-              </Typography>
-            </Box>
-          </Modal>
-
           {/* ------ */}
           <Card className={"max-w-[345px] " + styles.cardgeneral}>
             <CardMedia
