@@ -39,7 +39,59 @@ const Certifpremios = () => {
         <h1>"ESTOS SON ALGUNOS DE LAS DISTINCIONES QUE HEMOS RECIBIDO.."</h1>
       </div>
 
-      <div className="flex flex-row justify-start col-md-12 col-sm-12 m-12">
+      <div className="flex flex-row justify-center col-md-12 col-sm-12 m-12">
+        <Card className={"flex " + styles.card}>
+          <CardMedia
+            component="img"
+            sx={{ width: 151 }}
+            image={Premio1}
+            alt="Live from space album cover"
+          />
+          <Box className={"w-80 " + styles.cardlogros}>
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography component="div" variant="h5">
+                APP DEL AÑO
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                <p>
+                  Este premio se debe al desarrollo innovador del la app
+                  CoopTech, fue galardona con el maximo de los premios por su
+                  innovacion tecnologica..
+                </p>
+              </Typography>
+            </CardContent>
+          </Box>
+        </Card>
+        <Card className={"flex " + styles.card}>
+          <CardMedia
+            component="img"
+            sx={{ width: 151 }}
+            image={Premio1}
+            alt="Live from space album cover"
+          />
+          <Box className={"w-80 " + styles.cardlogros}>
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography component="div" variant="h5">
+                APP DEL AÑO
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                <p>
+                  Este premio se debe al desarrollo innovador del la app
+                  CoopTech, fue galardona con el maximo de los premios por su
+                  innovacion tecnologica..
+                </p>
+              </Typography>
+            </CardContent>
+          </Box>
+        </Card>
         <Card className={"flex " + styles.card}>
           <CardMedia
             component="img"

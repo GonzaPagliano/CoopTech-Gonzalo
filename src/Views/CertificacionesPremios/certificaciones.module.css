@@ -5,11 +5,12 @@
 }
 
 .cardlogros {
-  background-color: grey;
+  background-color: rgb(185, 180, 180);
   flex-direction: column;
 }
 
 .card {
   box-shadow: black 8px 7px 27.5px !important;
   border-radius: 8px !important;
+  margin-right: 15px;
 }

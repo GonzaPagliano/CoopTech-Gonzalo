@@ -141,6 +141,11 @@ const Contenido = () => {
                   </ul>
                 </li>
               </Link>
+              <Link className="mx-auto mb-2" to="/Sustentabilidad">
+                <li className="text-gray-500">
+                  <DoneIcon /> Sustentabilidad
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
